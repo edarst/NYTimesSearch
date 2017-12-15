@@ -1,10 +1,12 @@
 $('#searcbtn').on("click", function() {
 
-	var q = $('#searchterm').val();
+	var userInput = $('#searchterm').val();
+	var userFilter = $('#select').val();
+	var startYear = $('#startyear').val();
+	var endYear = $('#endyear').val();
 
 
-
-
+	
 //contained within div class of .panel
 
 // gather user input from provided search fields
