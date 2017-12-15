@@ -6,7 +6,7 @@ $('#searcbtn').on("click", function() {
 	var endYear = $('#endyear').val();
 
 
-	
+
 //contained within div class of .panel
 
 // gather user input from provided search fields
@@ -15,7 +15,7 @@ $('#searcbtn').on("click", function() {
 
 //number of records to fitler by (id #select)
 
-// start year optional (id of #startyear)
+// start year optional 
 
 // end year optional (id of #endyear)
 
@@ -23,14 +23,19 @@ $('#searcbtn').on("click", function() {
 
 // clear input (ID #clearbtn)
 
-var userSearch = 
-var filter = 
-var sYear =
-var eYear =
+// var userSearch = 
+// var filter = 
+// var sYear =
+// var eYear =
 
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 url += '?' + $.param({
-  'api-key': "0a4f449688f04ed582e845210a0e6886"
+  'api-key': "0a4f449688f04ed582e845210a0e6886",
+  'q': userInput,
+  'sort': "newest",
+  'begin_date': startYear,
+  'end_date': endYear,
+  
 });
 
 $.ajax({
