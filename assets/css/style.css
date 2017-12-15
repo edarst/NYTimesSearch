@@ -1,0 +1,25 @@
+.header-text {
+	font-size: 48px;
+	color: white !important;
+	text-align: center;
+}
+
+.jumbotron {
+	background-color: #070913;
+	border-radius: 5px;
+}
+
+.header {
+	background-color:#0d3257 !important;
+	
+	
+}
+
+.result{
+	display: none;
+}
+
+#resultsRenderingLocation {
+	background-color: #ecf0f1; 
+	border-radius: 5px;
+}
